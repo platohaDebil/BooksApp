@@ -19,6 +19,8 @@ set(PROJECT_SOURCES
         mainwindow.ui
         tablemodel.cpp
         tablemodel.h
+        proxymodel.cpp
+        proxymodel.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

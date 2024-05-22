@@ -4,7 +4,7 @@
 
 tablemodel::tablemodel(QObject *parent): QAbstractTableModel(parent)
 {
-    QFile file("C:\\Users\\L1\\Documents\\test_git\\data\\books.csv");
+    QFile file("C:\\Users\\Alex\\QT\\BooksApp\\BooksApp\\data\\books.csv");
     file.open(QFile::ReadOnly | QFile::Text);
     QTextStream ss(&file);
     QString s = ss.readLine();
@@ -73,13 +73,13 @@ QVariant tablemodel::headerData(int section, Qt::Orientation orientation, int ro
     }
     return QVariant();
 }
-// QSet<QString> tablemodel::getGenres() const{
 
-//     QSet <QString> set{};
-//     int position = _header.indexOf("listed_in");
-//     for(const QList<QString>& row :_data){
-//         for(const QString& value:row.at(position).split(", "))
-//         set.insert(value);
-//     }
-//     return set;
-//}
+QSet<QString> tablemodel::getYear() const{
+    QSet<QString> set;
+    int position = _header.indexOf("original_publication_year");
+    for(const QList<QString>& row :_data){
+        set.insert( row.at(position));
+    }
+    return set;
+}
+
