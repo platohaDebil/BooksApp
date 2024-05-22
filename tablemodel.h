@@ -5,6 +5,7 @@
 #include <QWidget>
 #include <QAbstractTableModel>
 #include <QSet>
+#include <QString>
 
 class tablemodel: public QAbstractTableModel
 {
@@ -16,7 +17,7 @@ public:
     int columnCount(const QModelIndex &parent = QModelIndex()) const override;
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
     QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
-    QSet<QString> getGenres() const;
+    QSet<QString> getYear() const;
 private:
     QList<QList<QString>> _data;
     QList<QString> _header;
