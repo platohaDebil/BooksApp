@@ -45,6 +45,3 @@ bool ProxyModel::filterAcceptsRow(int source_row, const QModelIndex &source_pare
 
 //     return rowYear == _year;
 // }
-
-
-

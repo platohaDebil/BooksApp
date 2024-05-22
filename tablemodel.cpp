@@ -28,6 +28,24 @@ tablemodel::tablemodel(QObject *parent): QAbstractTableModel(parent)
     file.close();
 }
 
+void tablemodel::addBook(const Book& book)
+{
+    beginInsertRows(QModelIndex(), _data.size(), _data.size());
+    QList<QString> row;
+    for (int i=0; i < 24; i++)
+    {
+        row.append("-");
+    }
+    row[7] = book.author;
+    row[8] = book.year;
+    row[10] = book.title;
+    row[11] = book.lang;
+    row[12] = book.rate;
+
+    _data.append(row);
+    endInsertRows();
+}
+
 int tablemodel::rowCount(const QModelIndex &parent) const
 {
     return _data.size();
@@ -55,6 +73,7 @@ QVariant tablemodel::headerData(int section, Qt::Orientation orientation, int ro
     }
     return QVariant();
 }
+
 QSet<QString> tablemodel::getYear() const{
     QSet<QString> set;
     int position = _header.indexOf("original_publication_year");
@@ -63,3 +82,4 @@ QSet<QString> tablemodel::getYear() const{
     }
     return set;
 }
+
