@@ -17,6 +17,8 @@ tablemodel::tablemodel(QObject *parent): QAbstractTableModel(parent)
     {
         s = ss.readLine();
         row = s.split(",");
+        row[8].remove(".0");
+        row[7].remove('"');
         //row[0].remove("\"");
         //(row.end() - 1)->remove("\"");
         _data.append(row);
@@ -24,6 +26,24 @@ tablemodel::tablemodel(QObject *parent): QAbstractTableModel(parent)
 
 
     file.close();
+}
+
+void tablemodel::addBook(const Book& book)
+{
+    beginInsertRows(QModelIndex(), _data.size(), _data.size());
+    QList<QString> row;
+    for (int i=0; i < 24; i++)
+    {
+        row.append("-");
+    }
+    row[7] = book.author;
+    row[8] = book.year;
+    row[10] = book.title;
+    row[11] = book.lang;
+    row[12] = book.rate;
+
+    _data.append(row);
+    endInsertRows();
 }
 
 int tablemodel::rowCount(const QModelIndex &parent) const
@@ -62,4 +82,4 @@ QVariant tablemodel::headerData(int section, Qt::Orientation orientation, int ro
 //         set.insert(value);
 //     }
 //     return set;
-// }
+//}
