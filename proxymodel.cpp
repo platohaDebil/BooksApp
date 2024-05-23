@@ -1,13 +1,18 @@
 #include "proxymodel.h"
 
-ProxyModel::ProxyModel(QObject* parent): QSortFilterProxyModel(parent), _year("year") {}
-void ProxyModel::setYear(const QString& year) {
+ProxyModel::ProxyModel(QObject *parent)
+    : QSortFilterProxyModel(parent)
+    , _year("year")
+{}
+void ProxyModel::setYear(const QString &year)
+{
     if (year != _year) {
         _year = year;
     }
     invalidateFilter();
 }
-bool ProxyModel::filterAcceptsRow(int source_row, const QModelIndex &source_parent) const {
+bool ProxyModel::filterAcceptsRow(int source_row, const QModelIndex &source_parent) const
+{
     if (_year == "year")
         return true;
     QModelIndex yearIndex = sourceModel()->index(source_row, 8, source_parent);

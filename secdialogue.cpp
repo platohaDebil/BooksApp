@@ -1,9 +1,9 @@
 #include "secdialogue.h"
 #include "ui_secdialogue.h"
 
-SecDialogue::SecDialogue(QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::SecDialogue)
+SecDialogue::SecDialogue(QWidget *parent)
+    : QDialog(parent)
+    , ui(new Ui::SecDialogue)
 {
     ui->setupUi(this);
 }
@@ -15,7 +15,6 @@ SecDialogue::~SecDialogue()
 
 Book SecDialogue::getFields() const
 {
-
     Book book;
     book.title = ui->lineEdit->text();
     book.author = ui->lineEdit_2->text();
@@ -24,4 +23,3 @@ Book SecDialogue::getFields() const
     book.rate = ui->lineEdit_5->text();
     return book;
 }
-
