@@ -42,6 +42,9 @@ void tablemodel::addBook(const Book &book)
 
     _data.append(row);
     endInsertRows();
+
+
+    qDebug() << "book added~";
 }
 
 int tablemodel::rowCount(const QModelIndex &parent) const
