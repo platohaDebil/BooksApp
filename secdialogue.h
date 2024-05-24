@@ -4,7 +4,6 @@
 #include <QDialog>
 #include "supplementary.h"
 
-
 namespace Ui {
 class SecDialogue;
 }

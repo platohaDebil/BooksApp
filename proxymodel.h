@@ -1,11 +1,11 @@
-
 #ifndef PROXYMODEL_H
 #define PROXYMODEL_H
 
 #include <QSortFilterProxyModel>
 #include <QString>
 
-class ProxyModel : public QSortFilterProxyModel {
+class ProxyModel : public QSortFilterProxyModel
+{
     Q_OBJECT
 
 public:
@@ -18,3 +18,4 @@ protected:
 private:
     QString _year;
 };
+#endif

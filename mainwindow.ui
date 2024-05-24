@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>519</width>
-    <height>297</height>
+    <width>1164</width>
+    <height>863</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,6 +17,27 @@
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Close the app</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>Show table</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="text">
+         <string>Hide table</string>
+        </property>
+       </widget>
+      </item>
       <item>
        <widget class="QLineEdit" name="lineEdit"/>
       </item>
@@ -29,19 +50,6 @@
       </item>
       <item>
        <widget class="QComboBox" name="comboBox"/>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
       </item>
      </layout>
     </item>
@@ -59,13 +67,62 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>519</width>
-     <height>21</height>
+     <width>1164</width>
+     <height>24</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>tableView</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>279</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>tableView</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>185</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>185</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>66</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1162</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
