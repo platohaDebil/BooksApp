@@ -17,19 +17,20 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    ui->tableView->setModel(tableModel);
+    QString filePath = "//Users//german_hse//Desktop//mansur.csv";
+    loadCsvData(filePath);
+
+
+    ui->comboBox->addItem("year");
+    for (const QString &i : tableModel->getYear())
+        ui->comboBox->addItem(i);
+
+    proxy->setSourceModel(tableModel);
+    ui->tableView->setModel(proxy);
 
     for (int i : {1, 2, 3, 5, 6, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23})
         ui->tableView->hideColumn(i);
-    proxy->setSourceModel(tableModel);
-    ui->tableView->setModel(proxy);
-    ui->comboBox->addItem("year");
 
-    for (const QString &i : tableModel->getYear())
-        ui->comboBox->addItem(i);
-    ui->tableView->setModel(model);
-    QString filePath = "//Users//german_hse//Desktop//mansur.csv";
-    loadCsvData(filePath);
 
 
     connect(ui->lineEdit, &QLineEdit::textEdited, this, &MainWindow::on_lineEdit_textEdited);
