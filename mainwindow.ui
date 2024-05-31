@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1164</width>
+    <width>1172</width>
     <height>863</height>
    </rect>
   </property>
@@ -56,6 +56,13 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
+       <widget class="QPushButton" name="favouriteButton">
+        <property name="text">
+         <string>Favorite books</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QTableView" name="tableView"/>
       </item>
      </layout>
@@ -67,8 +74,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1164</width>
-     <height>24</height>
+     <width>1172</width>
+     <height>37</height>
     </rect>
    </property>
   </widget>
@@ -87,8 +94,8 @@
      <y>53</y>
     </hint>
     <hint type="destinationlabel">
-     <x>284</x>
-     <y>107</y>
+     <x>297</x>
+     <y>242</y>
     </hint>
    </hints>
   </connection>
@@ -103,8 +110,8 @@
      <y>62</y>
     </hint>
     <hint type="destinationlabel">
-     <x>185</x>
-     <y>105</y>
+     <x>198</x>
+     <y>240</y>
     </hint>
    </hints>
   </connection>

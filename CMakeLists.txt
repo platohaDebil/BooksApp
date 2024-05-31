@@ -21,6 +21,14 @@ set(PROJECT_SOURCES
         tablemodel.h
         proxymodel.cpp
         proxymodel.h
+        favourite.cpp
+        favourite.h
+        favourite.ui
+        addingfavopuritebook.cpp
+        addingfavopuritebook.h
+        addingfavopuritebook.ui
+
+
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -31,6 +39,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         proxymodel.h proxymodel.cpp
         secdialogue.h secdialogue.cpp secdialogue.ui
         supplementary.h supplementary.cpp
+        favourite.h favourite.cpp favourite.ui
+        addingfavopuritebook.h addingfavopuritebook.cpp addingfavopuritebook.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET test_git APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

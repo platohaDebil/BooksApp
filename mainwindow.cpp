@@ -14,6 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     proxy(new ProxyModel)
     , model(new QStandardItemModel(this))
     , tableModel(new tablemodel) // dynamic memory
+    , favouriteDialog(new Favourite(this))
 {
     ui->setupUi(this);
 
@@ -42,6 +43,7 @@ MainWindow::~MainWindow()
 
     delete tableModel;
     delete proxy;
+    delete favouriteDialog;
 }
 
 void MainWindow::on_comboBox_currentTextChanged(const QString &arg1)
@@ -111,5 +113,11 @@ void MainWindow::loadCsvData(const QString &filePath)
     }
 
     file.close();
+}
+
+
+void MainWindow::on_favouriteButton_clicked()
+{
+    favouriteDialog->show();
 }
 
