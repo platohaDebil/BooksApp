@@ -44,7 +44,7 @@ void MainWindow::on_pushButton_clicked()
     {
         // for (QString field: sec.getFields())
         Book book =  sec.getFields();
-            qDebug() << book.title << " " << book.author << " " << book.year << " " << book.lang << " " << book.rate;
+            //qDebug() << book.title << " " << book.author << " " << book.year << " " << book.lang << " " << book.rate;
      tableModel->addBook(book);
 
     }
@@ -52,5 +52,15 @@ void MainWindow::on_pushButton_clicked()
 
 
 
+}
+
+
+void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
+{
+    Book book = tableModel->getBook(index);
+    secwindow = new SecWindow(book, this);
+
+    secwindow ->show();
+    //if (secwindow->show())
 }
 

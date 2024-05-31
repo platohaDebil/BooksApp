@@ -1,4 +1,3 @@
-
 #ifndef PROXYMODEL_H
 #define PROXYMODEL_H
 
@@ -18,3 +17,6 @@ protected:
 private:
     QString _year;
 };
+
+
+#endif

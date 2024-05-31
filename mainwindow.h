@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include "proxymodel.h"
 #include "tablemodel.h"
-
+#include "secwindow.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -24,10 +24,13 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_tableView_doubleClicked(const QModelIndex &index);
+
 private:
     Ui::MainWindow *ui;
     tablemodel *tableModel;
     ProxyModel *proxy;
+    SecWindow *secwindow;
 };
 
 #endif // MAINWINDOW_H
