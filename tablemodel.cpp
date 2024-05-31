@@ -2,10 +2,11 @@
 #include <QFile>
 #include <QMessageBox>
 
+
 tablemodel::tablemodel(QObject *parent)
     : QAbstractTableModel(parent)
 {
-    QFile file("//Users//german_hse//Desktop//mansur.csv");
+    QFile file("C:\\Users\\Alex\\QT\\BooksApp1\\data\\books.csv");
     file.open(QFile::ReadOnly | QFile::Text);
     QTextStream ss(&file);
     QString s = ss.readLine();
@@ -19,6 +20,7 @@ tablemodel::tablemodel(QObject *parent)
         row = s.split(",");
         row[8].remove(".0");
         row[7].remove('"');
+        row[10].remove('"');
         //row[0].remove("\"");
         //(row.end() - 1)->remove("\"");
         _data.append(row);
@@ -82,6 +84,7 @@ QSet<QString> tablemodel::getYear() const
     int position = _header.indexOf("original_publication_year");
     for (const QList<QString> &row : _data) {
         set.insert(row.at(position));
+
     }
     return set;
 }

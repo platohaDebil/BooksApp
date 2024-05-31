@@ -29,13 +29,14 @@ private slots:
 
     void on_lineEdit_textEdited(const QString &arg1);
 
+
 private:
     Ui::MainWindow *ui;
     tablemodel *tableModel;
     ProxyModel *proxy;
-    QStandardItemModel *model;
-    void searchBooksByAuthor(const QString &author);
-    void loadCsvData(const QString &filePath);
+    // QStandardItemModel *model;
+    // void searchBooksByAuthor(const QString &author);
+    // void loadCsvData(const QString &filePath);
 };
 
 #endif // MAINWINDOW_H

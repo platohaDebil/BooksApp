@@ -5,7 +5,7 @@
 #include <QObject>
 #include <QSet>
 #include <QWidget>
-
+#include <algorithm>
 #include <QString>
 
 #include "supplementary.h"
