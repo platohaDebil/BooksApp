@@ -56,7 +56,11 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QTableView" name="tableView"/>
+       <widget class="QTableView" name="tableView">
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -67,8 +71,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1164</width>
-     <height>24</height>
+     <width>519</width>
+     <height>17</height>
     </rect>
    </property>
   </widget>

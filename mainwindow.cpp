@@ -52,10 +52,10 @@ void MainWindow::on_pushButton_clicked()
     SecDialogue sec;
     if (sec.exec()) {
         // for (QString field: sec.getFields())
-        Book book = sec.getFields();
-        qDebug() << book.title << " " << book.author << " " << book.year << " " << book.lang << " "
-                 << book.rate;
-        tableModel->addBook(book);
+        Book book =  sec.getFields();
+            //qDebug() << book.title << " " << book.author << " " << book.year << " " << book.lang << " " << book.rate;
+     tableModel->addBook(book);
+
     }
     // sec.setModal(true);
 }
@@ -111,4 +111,14 @@ void MainWindow::on_lineEdit_textEdited(const QString &arg1)
 
 //     file.close();
 // }
+
+
+void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
+{
+    Book book = tableModel->getBook(index);
+    secwindow = new SecWindow(book, this);
+
+    secwindow ->show();
+    //if (secwindow->show())
+}
 

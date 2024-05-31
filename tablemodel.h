@@ -23,9 +23,11 @@ public:
                         Qt::Orientation orientation,
                         int role = Qt::DisplayRole) const override;
 
-    QSet<QString> getYear() const;
+    QStringList getYear() const;
 
-    void addBook(const Book &);
+    void addBook(const Book&);
+    Book getBook(const QModelIndex&);
+
 
 private:
     QList<QList<QString>> _data;

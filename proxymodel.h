@@ -22,4 +22,7 @@ private:
     QString _author;
     QString _title;
 };
+
+
+
 #endif
