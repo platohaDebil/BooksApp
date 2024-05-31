@@ -2,7 +2,9 @@
 #include <QFile>
 #include <QMessageBox>
 
-tablemodel::tablemodel(QObject *parent): QAbstractTableModel(parent)
+
+tablemodel::tablemodel(QObject *parent)
+    : QAbstractTableModel(parent)
 {
     QFile file("C:\\Users\\L1\\Documents\\test_git\\data\\books.csv");
     file.open(QFile::ReadOnly | QFile::Text);
@@ -11,29 +13,27 @@ tablemodel::tablemodel(QObject *parent): QAbstractTableModel(parent)
     _header = s.split(",");
     //_header[0].remove("\"");
     //(_header[_header.size()-1]).remove("\"");
-    QList <QString> row;
+    QList<QString> row;
 
-    while (!ss.atEnd())
-    {
+    while (!ss.atEnd()) {
         s = ss.readLine();
         row = s.split(",");
         row[8].remove(".0");
         row[7].remove('"');
+        row[10].remove('"');
         //row[0].remove("\"");
         //(row.end() - 1)->remove("\"");
         _data.append(row);
     }
 
-
     file.close();
 }
 
-void tablemodel::addBook(const Book& book)
+void tablemodel::addBook(const Book &book)
 {
     beginInsertRows(QModelIndex(), _data.size(), _data.size());
     QList<QString> row;
-    for (int i=0; i < 24; i++)
-    {
+    for (int i = 0; i < 24; i++) {
         row.append("-");
     }
     row[7] = book.author;
@@ -44,6 +44,9 @@ void tablemodel::addBook(const Book& book)
 
     _data.append(row);
     endInsertRows();
+
+
+    qDebug() << "book added~";
 }
 
 Book tablemodel::getBook(const QModelIndex& index){
@@ -73,15 +76,16 @@ int tablemodel::columnCount(const QModelIndex &parent) const
 
 QVariant tablemodel::data(const QModelIndex &index, int role) const
 {
-    if(!index.isValid())
+    if (!index.isValid())
         return QVariant();
     if (role == Qt::DisplayRole || role == Qt::EditRole)
         return QVariant(_data[index.row()][index.column()]);
     return QVariant();
 }
-QVariant tablemodel::headerData(int section, Qt::Orientation orientation, int role) const{
-    if(role == Qt::DisplayRole){
-        if (orientation == Qt::Horizontal){
+QVariant tablemodel::headerData(int section, Qt::Orientation orientation, int role) const
+{
+    if (role == Qt::DisplayRole) {
+        if (orientation == Qt::Horizontal) {
             return _header[section];
         }
         return section;
@@ -89,15 +93,16 @@ QVariant tablemodel::headerData(int section, Qt::Orientation orientation, int ro
     return QVariant();
 }
 
+
 QStringList tablemodel::getYear() const{
     QSet<QString> set;
     int position = _header.indexOf("original_publication_year");
-    for(const QList<QString>& row :_data){
-        set.insert( row.at(position));
+    for (const QList<QString> &row : _data) {
+        set.insert(row.at(position));
+
     }
     QStringList setList = set.values();
     // , [](QString &curr, QString &next){return curr<next;}
     std::sort(setList.begin(), setList.end());
     return setList;
 }
-
