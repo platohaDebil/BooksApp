@@ -41,6 +41,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         supplementary.h supplementary.cpp
         favourite.h favourite.cpp favourite.ui
         addingfavopuritebook.h addingfavopuritebook.cpp addingfavopuritebook.ui
+        secwindow.h secwindow.cpp secwindow.ui
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET test_git APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

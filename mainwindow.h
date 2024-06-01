@@ -8,7 +8,7 @@
 #include <QLineEdit>
 #include <QStandardItemModel>
 #include "favourite.h"
-
+#include "secwindow.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -28,7 +28,11 @@ private slots:
 
     void on_pushButton_clicked();
 
-    void on_lineEdit_textEdited(const QString &arg1);
+    void on_tableView_doubleClicked(const QModelIndex &index);
+    
+
+
+
 
     void on_favouriteButton_clicked();
 
@@ -41,6 +45,7 @@ private:
     void loadCsvData(const QString &filePath);
     QStandardItemModel *mainTableModel;
     Favourite *favouriteDialog;
+    SecWindow *secwindow;
 };
 
 #endif // MAINWINDOW_H

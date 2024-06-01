@@ -2,10 +2,11 @@
 #include <QFile>
 #include <QMessageBox>
 
+
 tablemodel::tablemodel(QObject *parent)
     : QAbstractTableModel(parent)
 {
-    QFile file("//Users//german_hse//Desktop//mansur.csv");
+    QFile file("C:\\Users\\L1\\Documents\\test_git\\data\\books.csv");
     file.open(QFile::ReadOnly | QFile::Text);
     QTextStream ss(&file);
     QString s = ss.readLine();
@@ -19,6 +20,7 @@ tablemodel::tablemodel(QObject *parent)
         row = s.split(",");
         row[8].remove(".0");
         row[7].remove('"');
+        row[10].remove('"');
         //row[0].remove("\"");
         //(row.end() - 1)->remove("\"");
         _data.append(row);
@@ -45,6 +47,21 @@ void tablemodel::addBook(const Book &book)
 
 
     qDebug() << "book added~";
+}
+
+Book tablemodel::getBook(const QModelIndex& index){
+    QList<QString> row = _data.at(index.row());
+    Book book;
+    book.author = row[7];
+    book.title = row[9];
+    book.link = row[21];
+    book.rate1 = row[16];
+    book.rate2 = row[17];
+    book.rate3 = row[18];
+    book.rate4 = row[19];
+    book.rate5 = row[20];
+    book.reviewCount = row[15];
+    return book;
 }
 
 int tablemodel::rowCount(const QModelIndex &parent) const
@@ -76,12 +93,16 @@ QVariant tablemodel::headerData(int section, Qt::Orientation orientation, int ro
     return QVariant();
 }
 
-QSet<QString> tablemodel::getYear() const
-{
+
+QStringList tablemodel::getYear() const{
     QSet<QString> set;
     int position = _header.indexOf("original_publication_year");
     for (const QList<QString> &row : _data) {
         set.insert(row.at(position));
+
     }
-    return set;
+    QStringList setList = set.values();
+    // , [](QString &curr, QString &next){return curr<next;}
+    std::sort(setList.begin(), setList.end());
+    return setList;
 }
