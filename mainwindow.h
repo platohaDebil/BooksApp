@@ -9,6 +9,8 @@
 #include <QStandardItemModel>
 #include "favourite.h"
 #include "secwindow.h"
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -30,9 +32,7 @@ private slots:
 
     void on_tableView_doubleClicked(const QModelIndex &index);
     
-
-
-
+    void on_lineEdit_textEdited(const QString &arg1);
 
     void on_favouriteButton_clicked();
 
@@ -40,8 +40,8 @@ private:
     Ui::MainWindow *ui;
     tablemodel *tableModel;
     ProxyModel *proxy;
-    QStandardItemModel *model;
-    void searchBooksByAuthor(const QString &author);
+    // QStandardItemModel *model;
+    // void searchBooksByAuthor(const QString &author);
     void loadCsvData(const QString &filePath);
     QStandardItemModel *mainTableModel;
     Favourite *favouriteDialog;

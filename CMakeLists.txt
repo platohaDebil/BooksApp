@@ -42,6 +42,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         favourite.h favourite.cpp favourite.ui
         addingfavopuritebook.h addingfavopuritebook.cpp addingfavopuritebook.ui
         secwindow.h secwindow.cpp secwindow.ui
+        plaintext.pro
 
     )
 # Define target properties for Android with Qt 6 as:
@@ -88,3 +89,6 @@ install(TARGETS test_git
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(test_git)
 endif()
+
+find_package(Qt6 REQUIRED COMPONENTS Network)
+target_link_libraries(test_git PRIVATE Qt${QT_VERSION_MAJOR}::Network)

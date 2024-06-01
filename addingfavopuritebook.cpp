@@ -11,7 +11,7 @@ addingfavopuritebook::addingfavopuritebook(QWidget *parent)
     ui->setupUi(this);
     ui->tableView65->setModel(model);
 
-    QString filePath = "//Users//german_hse//Desktop//mansur.csv";
+    QString filePath = "C:\\Users\\Alex\\QT\\BooksApp2\\data\\books.csv";
     loadCSVData(filePath);
     for (int i : {1, 2, 3, 5, 6, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23})
         ui->tableView65->hideColumn(i);
@@ -29,12 +29,12 @@ void addingfavopuritebook::on_buttonBox_accepted()
 }
 void addingfavopuritebook::on_pushButton_clicked()
 {
-    QString filePath = "//Users//german_hse//Desktop//mansur.csv";
+    QString filePath = "C:\\Users\\Alex\\QT\\BooksApp2\\data\\books.csv";
     loadCSVData(filePath);
 }
 void addingfavopuritebook::on_tableView65_activated(const QModelIndex &index)
 {
-    QString filePath = "//Users//german_hse//Desktop//mansur.csv";
+    QString filePath = "C:\\Users\\Alex\\QT\\BooksApp2\\data\\books.csv";
     loadCSVData(filePath);
 }
 void addingfavopuritebook::loadCSVData(const QString &filePath)
