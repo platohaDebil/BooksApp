@@ -4,10 +4,6 @@
 #include <QMainWindow>
 #include "proxymodel.h"
 #include "tablemodel.h"
-#include <QTableView>
-#include <QLineEdit>
-#include <QStandardItemModel>
-#include "favourite.h"
 #include "secwindow.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -34,17 +30,10 @@ private slots:
 
 
 
-    void on_favouriteButton_clicked();
-
 private:
     Ui::MainWindow *ui;
     tablemodel *tableModel;
     ProxyModel *proxy;
-    QStandardItemModel *model;
-    void searchBooksByAuthor(const QString &author);
-    void loadCsvData(const QString &filePath);
-    QStandardItemModel *mainTableModel;
-    Favourite *favouriteDialog;
     SecWindow *secwindow;
 };
 

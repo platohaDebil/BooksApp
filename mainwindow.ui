@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1172</width>
+    <width>1164</width>
     <height>863</height>
    </rect>
   </property>
@@ -56,14 +56,6 @@
     <item>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QPushButton" name="favouriteButton">
-        <property name="text">
-         <string>Favorite books</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QTableView" name="tableView"/>
        <widget class="QTableView" name="tableView">
         <property name="selectionBehavior">
          <enum>QAbstractItemView::SelectRows</enum>
@@ -79,8 +71,6 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1172</width>
-     <height>37</height>
      <width>519</width>
      <height>17</height>
     </rect>
@@ -101,8 +91,8 @@
      <y>53</y>
     </hint>
     <hint type="destinationlabel">
-     <x>297</x>
-     <y>242</y>
+     <x>284</x>
+     <y>107</y>
     </hint>
    </hints>
   </connection>
@@ -117,8 +107,8 @@
      <y>62</y>
     </hint>
     <hint type="destinationlabel">
-     <x>198</x>
-     <y>240</y>
+     <x>185</x>
+     <y>105</y>
     </hint>
    </hints>
   </connection>
