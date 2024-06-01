@@ -1,3 +1,0 @@
-# Hashes of file build rules.
-b42d9502274e54cdc3f7d234870eda8f CMakeFiles/test_git_autogen
-a8df215853f9130e85c9bb58cb951a1b test_git_autogen/timestamp

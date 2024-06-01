@@ -12,7 +12,6 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent)
 
     proxy(new ProxyModel)
     , tableModel(new tablemodel) // dynamic memory
-    , favouriteDialog(new Favourite(this))
 {
     ui->setupUi(this);
 
@@ -41,7 +40,6 @@ MainWindow::~MainWindow()
 
     delete tableModel;
     delete proxy;
-    delete favouriteDialog;
 }
 
 void MainWindow::on_comboBox_currentTextChanged(const QString &arg1)
@@ -122,11 +120,5 @@ void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
 
     secwindow ->show();
     //if (secwindow->show())
-}
-
-
-void MainWindow::on_favouriteButton_clicked()
-{
-    favouriteDialog->show();
 }
 
