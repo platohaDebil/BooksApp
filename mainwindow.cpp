@@ -68,56 +68,27 @@ void MainWindow::on_lineEdit_textEdited(const QString &arg1)
 }
 
 
-// void MainWindow::searchBooksByAuthor(const QString &author)
-// {
-
-//     int authorColumn = 7;
-//     for (int row = 0; row < model->rowCount(); ++row) {
-//         QModelIndex index = model->index(row, authorColumn);
-//         QString itemText = model->data(index).toString();
-//         bool match = itemText.contains(author, Qt::CaseInsensitive);
-//         ui->tableView->setRowHidden(row, !match);
-//     }
-// }
-
-// void MainWindow::loadCsvData(const QString &filePath)
-// {
-//     QFile file(filePath);
-//     if (!file.open(QIODevice::ReadOnly)) {
-//         QMessageBox::critical(this, "Ошибка", "Не удалось открыть файл");
-//         return;
-//     }
-
-//     QTextStream in(&file);
-//     QStringList headers;
-//     if (!in.atEnd()) {
-
-//         QString line = in.readLine();
-//         headers = line.split(",");
-//         model->setColumnCount(headers.size());
-//         for (int i = 0; i < headers.size(); ++i) {
-//             model->setHeaderData(i, Qt::Horizontal, headers.at(i));
-//         }
-//     }
-
-
-//     while (!in.atEnd()) {
-//         QString line = in.readLine();
-//         QStringList fields = line.split(",");
-//         QList<QStandardItem *> items;
-//         for (const QString &field : fields) {
-//             items.append(new QStandardItem(field));
-//         }
-//         model->appendRow(items);
-//     }
-
-//     file.close();
-// }
 
 
 void MainWindow::on_tableView_doubleClicked(const QModelIndex &index)
 {
-    Book book = tableModel->getBook(index);
+    QList<QModelIndex> indexes = ui->tableView->selectionModel()->selectedIndexes();
+    //QList<QString> row = _data.at(index.row());
+    QList<QString> row;
+    for (QModelIndex i: indexes)
+    {
+        row.push_back(i.data().toString());
+    }
+    Book book;
+    book.author = row[7];
+    book.title = row[9];
+    book.link = row[21];
+    book.rate1 = row[16];
+    book.rate2 = row[17];
+    book.rate3 = row[18];
+    book.rate4 = row[19];
+    book.rate5 = row[20];
+    book.reviewCount = row[15];
     secwindow = new SecWindow(book, this);
 
     secwindow ->show();

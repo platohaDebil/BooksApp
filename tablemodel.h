@@ -26,7 +26,6 @@ public:
     QStringList getYear() const;
 
     void addBook(const Book&);
-    Book getBook(const QModelIndex&);
 
 
 private:

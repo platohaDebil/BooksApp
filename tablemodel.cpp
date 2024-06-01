@@ -6,7 +6,7 @@
 tablemodel::tablemodel(QObject *parent)
     : QAbstractTableModel(parent)
 {
-    QFile file("C:\\Users\\L1\\Documents\\test_git\\data\\books.csv");
+    QFile file("C:\\Users\\Alex\\QT\\BooksApp2\\data\\books.csv");
     file.open(QFile::ReadOnly | QFile::Text);
     QTextStream ss(&file);
     QString s = ss.readLine();
@@ -49,20 +49,7 @@ void tablemodel::addBook(const Book &book)
     qDebug() << "book added~";
 }
 
-Book tablemodel::getBook(const QModelIndex& index){
-    QList<QString> row = _data.at(index.row());
-    Book book;
-    book.author = row[7];
-    book.title = row[9];
-    book.link = row[21];
-    book.rate1 = row[16];
-    book.rate2 = row[17];
-    book.rate3 = row[18];
-    book.rate4 = row[19];
-    book.rate5 = row[20];
-    book.reviewCount = row[15];
-    return book;
-}
+
 
 int tablemodel::rowCount(const QModelIndex &parent) const
 {
