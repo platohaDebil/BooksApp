@@ -13,6 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTableView>
 
@@ -23,18 +24,22 @@ class Ui_addingfavopuritebook
 public:
     QPushButton *pushButton;
     QTableView *tableView65;
+    QLineEdit *lineEdit65;
 
     void setupUi(QDialog *addingfavopuritebook)
     {
         if (addingfavopuritebook->objectName().isEmpty())
             addingfavopuritebook->setObjectName("addingfavopuritebook");
-        addingfavopuritebook->resize(1114, 702);
+        addingfavopuritebook->resize(521, 283);
         pushButton = new QPushButton(addingfavopuritebook);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(400, 0, 100, 32));
+        pushButton->setGeometry(QRect(1000, 0, 100, 32));
         tableView65 = new QTableView(addingfavopuritebook);
         tableView65->setObjectName("tableView65");
-        tableView65->setGeometry(QRect(5, 41, 1101, 651));
+        tableView65->setGeometry(QRect(576, 312, 20, 20));
+        lineEdit65 = new QLineEdit(addingfavopuritebook);
+        lineEdit65->setObjectName("lineEdit65");
+        lineEdit65->setGeometry(QRect(150, 10, 211, 21));
 
         retranslateUi(addingfavopuritebook);
         QObject::connect(pushButton, &QPushButton::clicked, addingfavopuritebook, qOverload<>(&QDialog::close));
@@ -46,6 +51,7 @@ public:
     {
         addingfavopuritebook->setWindowTitle(QCoreApplication::translate("addingfavopuritebook", "Dialog", nullptr));
         pushButton->setText(QCoreApplication::translate("addingfavopuritebook", "Close ", nullptr));
+        lineEdit65->setText(QString());
     } // retranslateUi
 
 };

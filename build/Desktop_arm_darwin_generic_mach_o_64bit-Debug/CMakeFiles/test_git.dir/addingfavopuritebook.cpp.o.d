@@ -1057,6 +1057,8 @@ CMakeFiles/test_git.dir/addingfavopuritebook.cpp.o: \
   /opt/homebrew/lib/QtGui.framework/Headers/QStandardItemModel \
   /opt/homebrew/lib/QtGui.framework/Headers/qstandarditemmodel.h \
   /opt/homebrew/include/QtCore/qabstractitemmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/include/ui_addingfavopuritebook.h \
   /opt/homebrew/include/QtCore/QVariant \
   /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h \
@@ -1089,6 +1091,14 @@ CMakeFiles/test_git.dir/addingfavopuritebook.cpp.o: \
   /opt/homebrew/include/QtWidgets/qtabbar.h \
   /opt/homebrew/include/QtWidgets/qtabwidget.h \
   /opt/homebrew/include/QtWidgets/qrubberband.h \
+  /opt/homebrew/include/QtWidgets/QLineEdit \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qlineedit.h \
+  /opt/homebrew/include/QtGui/qtextcursor.h \
+  /opt/homebrew/include/QtGui/qtextdocument.h \
+  /opt/homebrew/include/QtCore/qurl.h \
+  /opt/homebrew/include/QtGui/qtextformat.h \
+  /opt/homebrew/include/QtGui/qpen.h \
+  /opt/homebrew/include/QtGui/qtextoption.h \
   /opt/homebrew/include/QtWidgets/QPushButton \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qpushbutton.h \
   /opt/homebrew/include/QtWidgets/qabstractbutton.h \

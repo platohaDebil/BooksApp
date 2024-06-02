@@ -91,6 +91,7 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/syslimits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/wait.h \
+  /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtCore.framework/Versions/A/Headers/QStringList \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \

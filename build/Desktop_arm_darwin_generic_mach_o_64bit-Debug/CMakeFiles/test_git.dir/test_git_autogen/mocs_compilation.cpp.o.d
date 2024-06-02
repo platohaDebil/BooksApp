@@ -1058,21 +1058,40 @@ CMakeFiles/test_git.dir/test_git_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/lib/QtGui.framework/Headers/QStandardItemModel \
   /opt/homebrew/lib/QtGui.framework/Headers/qstandarditemmodel.h \
   /opt/homebrew/include/QtCore/qabstractitemmodel.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
   /opt/homebrew/include/QtCore/qtmochelpers.h \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/EWIEGA46WW/moc_favourite.cpp \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/EWIEGA46WW/../../../../favourite.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QWidget \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qwidget.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QTableWidget \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qtablewidget.h \
+  /opt/homebrew/include/QtWidgets/qtableview.h \
+  /opt/homebrew/include/QtWidgets/qabstractitemview.h \
+  /opt/homebrew/include/QtWidgets/qabstractscrollarea.h \
+  /opt/homebrew/include/QtWidgets/qframe.h \
+  /opt/homebrew/include/QtCore/qitemselectionmodel.h \
+  /opt/homebrew/include/QtWidgets/qabstractitemdelegate.h \
+  /opt/homebrew/include/QtWidgets/qstyleoption.h \
+  /opt/homebrew/include/QtCore/qlocale.h \
+  /opt/homebrew/include/QtWidgets/qabstractspinbox.h \
+  /opt/homebrew/include/QtGui/qvalidator.h \
+  /opt/homebrew/include/QtCore/qregularexpression.h \
+  /opt/homebrew/include/QtWidgets/qslider.h \
+  /opt/homebrew/include/QtWidgets/qabstractslider.h \
+  /opt/homebrew/include/QtWidgets/qstyle.h \
+  /opt/homebrew/include/QtWidgets/qtabbar.h \
+  /opt/homebrew/include/QtWidgets/qtabwidget.h \
+  /opt/homebrew/include/QtWidgets/qrubberband.h \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/EWIEGA46WW/moc_mainwindow.cpp \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/EWIEGA46WW/../../../../mainwindow.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qmainwindow.h \
-  /opt/homebrew/include/QtWidgets/qtabwidget.h \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/EWIEGA46WW/../../../../proxymodel.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QSortFilterProxyModel \
   /opt/homebrew/lib/QtCore.framework/Headers/qsortfilterproxymodel.h \
   /opt/homebrew/include/QtCore/qabstractproxymodel.h \
-  /opt/homebrew/include/QtCore/qregularexpression.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QString \
   /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/EWIEGA46WW/../../../../tablemodel.h \
@@ -1087,20 +1106,6 @@ CMakeFiles/test_git.dir/test_git_autogen/mocs_compilation.cpp.o: \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/EWIEGA46WW/../../../../supplementary.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QTableView \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qtableview.h \
-  /opt/homebrew/include/QtWidgets/qabstractitemview.h \
-  /opt/homebrew/include/QtWidgets/qabstractscrollarea.h \
-  /opt/homebrew/include/QtWidgets/qframe.h \
-  /opt/homebrew/include/QtCore/qitemselectionmodel.h \
-  /opt/homebrew/include/QtWidgets/qabstractitemdelegate.h \
-  /opt/homebrew/include/QtWidgets/qstyleoption.h \
-  /opt/homebrew/include/QtCore/qlocale.h \
-  /opt/homebrew/include/QtWidgets/qabstractspinbox.h \
-  /opt/homebrew/include/QtGui/qvalidator.h \
-  /opt/homebrew/include/QtWidgets/qslider.h \
-  /opt/homebrew/include/QtWidgets/qabstractslider.h \
-  /opt/homebrew/include/QtWidgets/qstyle.h \
-  /opt/homebrew/include/QtWidgets/qtabbar.h \
-  /opt/homebrew/include/QtWidgets/qrubberband.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QLineEdit \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qlineedit.h \
   /opt/homebrew/include/QtGui/qtextcursor.h \

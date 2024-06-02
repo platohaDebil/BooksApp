@@ -344,11 +344,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "test_git_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "test_git_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "test_git_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "test_git::@6890427a1f51a3e7e1df",

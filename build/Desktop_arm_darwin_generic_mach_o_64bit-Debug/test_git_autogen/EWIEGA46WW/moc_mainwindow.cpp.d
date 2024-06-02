@@ -101,6 +101,7 @@
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtCore.framework/Versions/A/Headers/QSet \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtCore.framework/Versions/A/Headers/QSortFilterProxyModel \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtCore.framework/Versions/A/Headers/QString \
+  /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtCore.framework/Versions/A/Headers/QStringList \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \
@@ -257,6 +258,7 @@
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtWidgets.framework/Versions/A/Headers/QLineEdit \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtWidgets.framework/Versions/A/Headers/QTableView \
+  /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtWidgets.framework/Versions/A/Headers/QTableWidget \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemdelegate.h \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtWidgets.framework/Versions/A/Headers/qabstractitemview.h \
@@ -274,6 +276,7 @@
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtWidgets.framework/Versions/A/Headers/qstyleoption.h \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtWidgets.framework/Versions/A/Headers/qtabbar.h \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtWidgets.framework/Versions/A/Headers/qtableview.h \
+  /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtWidgets.framework/Versions/A/Headers/qtablewidget.h \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \

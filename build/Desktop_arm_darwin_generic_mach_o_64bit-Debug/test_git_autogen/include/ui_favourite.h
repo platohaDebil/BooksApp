@@ -34,7 +34,7 @@ public:
         pushButton54->setGeometry(QRect(19, 1, 951, 61));
         tableWidget54 = new QTableWidget(Favourite);
         tableWidget54->setObjectName("tableWidget54");
-        tableWidget54->setGeometry(QRect(20, 61, 951, 561));
+        tableWidget54->setGeometry(QRect(20, 50, 951, 561));
 
         retranslateUi(Favourite);
 
