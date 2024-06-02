@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Favourite</class>
- <widget class="QWidget" name="Favourite">
+ <widget class="QDialog" name="Favourite">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Favourite</string>
   </property>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
@@ -19,24 +19,7 @@
      <x>10</x>
      <y>0</y>
      <width>951</width>
-<<<<<<< HEAD
      <height>651</height>
-=======
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Add favourite book</string>
-   </property>
-  </widget>
-  <widget class="QTableWidget" name="tableWidget54">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>50</y>
-     <width>951</width>
-     <height>561</height>
->>>>>>> 18130da (project)
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">

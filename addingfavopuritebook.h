@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <QStandardItemModel>
 #include <QStringList>
+#include <QVector>
 
 namespace Ui {
 class addingfavopuritebook;
@@ -30,6 +31,7 @@ private slots:
 private:
     Ui::addingfavopuritebook *ui;
     QStandardItemModel *model;
+    QVector<QStringList> csvDataCache;
 };
 
 #endif // ADDINGFAVOPURITEBOOK_H

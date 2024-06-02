@@ -11,9 +11,9 @@ Favourite::Favourite(QWidget *parent)
     , ui(new Ui::Favourite)
 {
     ui->setupUi(this);
-    QString filePath = "//Users//german_hse//Desktop//mansur.csv";
-    loadCSVData(filePath); // Загружаем данные из CSV файла при инициализации окна
-    hideAllRows(); // Скрываем все строки после загрузки данных
+    QString filePath = "C:\\Users\\Alex\\QT\\BooksApp\\BooksApp2\\data\\books.csv";
+    loadCSVData(filePath);
+    hideAllRows();
 }
 
 Favourite::~Favourite()
@@ -36,6 +36,7 @@ void Favourite::on_pushButton54_clicked()
 
 void Favourite::addBookToTable(const QStringList &bookDetails)
 {
+    ui->tableWidget54->setUpdatesEnabled(false);
     hideAllRows(); // Скрываем все строки перед добавлением новой строки
     int row = ui->tableWidget54->rowCount();
     ui->tableWidget54->insertRow(row);
@@ -43,6 +44,7 @@ void Favourite::addBookToTable(const QStringList &bookDetails)
         ui->tableWidget54->setItem(row, column, new QTableWidgetItem(bookDetails[column]));
     }
     ui->tableWidget54->setRowHidden(row, false); // Отображаем добавленную строку
+    ui->tableWidget54->setUpdatesEnabled(true);
 }
 
 void Favourite::loadCSVData(const QString &filePath)
@@ -78,7 +80,6 @@ void Favourite::loadCSVData(const QString &filePath)
     }
     file.close();
 
-    // Скрываем определенные колонки
     for (int i : {1, 2, 3, 5, 6, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23}) {
         ui->tableWidget54->setColumnHidden(i, true);
     }

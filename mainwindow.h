@@ -40,7 +40,7 @@ private:
     Ui::MainWindow *ui;
     tablemodel *tableModel;
     ProxyModel *proxy;
-    // QStandardItemModel *model;
+    QStandardItemModel *model;
     // void searchBooksByAuthor(const QString &author);
     void loadCsvData(const QString &filePath);
     QStandardItemModel *mainTableModel;

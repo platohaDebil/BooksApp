@@ -1,6 +1,6 @@
 QT += core gui widgets network
 
-TARGET = BooksApp2
+TARGET = BooksApp
 TEMPLATE = app
 
 SOURCES += main.cpp \

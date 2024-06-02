@@ -6,7 +6,7 @@
 tablemodel::tablemodel(QObject *parent)
     : QAbstractTableModel(parent)
 {
-    QFile file("C:\\Users\\Alex\\QT\\BooksApp2\\data\\books.csv");
+    QFile file("C:\\Users\\Alex\\QT\\BooksApp\\BooksApp2\\data\\books.csv");
     file.open(QFile::ReadOnly | QFile::Text);
     QTextStream ss(&file);
     QString s = ss.readLine();
