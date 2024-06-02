@@ -3,6 +3,7 @@
 #include <QFile>
 #include <QTextStream>
 #include <QMessageBox>
+
 addingfavopuritebook::addingfavopuritebook(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::addingfavopuritebook)
@@ -14,8 +15,7 @@ addingfavopuritebook::addingfavopuritebook(QWidget *parent)
     QString filePath = "C:\\Users\\Alex\\QT\\BooksApp2\\data\\books.csv";
     loadCSVData(filePath);
     for (int i : {1, 2, 3, 5, 6, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23})
-        ui->tableView65->hideColumn(i);
-
+        ui->tableView65->setColumnHidden(i, true);
 }
 
 addingfavopuritebook::~addingfavopuritebook()
@@ -25,18 +25,29 @@ addingfavopuritebook::~addingfavopuritebook()
 
 void addingfavopuritebook::on_buttonBox_accepted()
 {
-
+    // Эта функция может быть пустой, если она не используется
 }
+
 void addingfavopuritebook::on_pushButton_clicked()
 {
     QString filePath = "C:\\Users\\Alex\\QT\\BooksApp2\\data\\books.csv";
     loadCSVData(filePath);
 }
+
 void addingfavopuritebook::on_tableView65_activated(const QModelIndex &index)
 {
+<<<<<<< HEAD
     QString filePath = "C:\\Users\\Alex\\QT\\BooksApp2\\data\\books.csv";
     loadCSVData(filePath);
+=======
+    QStringList bookDetails;
+    for (int column = 0; column < model->columnCount(); ++column) {
+        bookDetails << model->data(model->index(index.row(), column)).toString();
+    }
+    emit bookSelected(bookDetails);
+>>>>>>> 18130da (project)
 }
+
 void addingfavopuritebook::loadCSVData(const QString &filePath)
 {
     QFile file(filePath);
@@ -52,12 +63,13 @@ void addingfavopuritebook::loadCSVData(const QString &filePath)
 
     while (!in.atEnd()) {
         QStringList fields = in.readLine().split(",");
-        // Проверяем и модифицируем данные в колонках 7 и 8
-        if (fields.size() > 7) {
-            fields[7].replace("\"", ""); // Убираем кавычки в 7-й колонке
+        // Удаляем кавычки из всех колонок
+        for (QString &field : fields) {
+            field.remove("\"");
         }
+        // Проверяем и модифицируем данные в колонке 8
         if (fields.size() > 8) {
-            fields[8] = QString::number(fields[8].toDouble(), 'f', 0); // Форматируем 8-ю колонку, чтобы убрать '.0'
+            fields[8].remove(".0"); // Убираем '.0'
         }
         QList<QStandardItem *> items;
         for (const QString &field : fields) {
@@ -66,5 +78,28 @@ void addingfavopuritebook::loadCSVData(const QString &filePath)
         model->appendRow(items);
     }
     file.close();
+}
+
+void addingfavopuritebook::on_lineEdit65_editingFinished()
+{
+    QString bookId = ui->lineEdit65->text().trimmed();
+    bool found = false;
+    if (!bookId.isEmpty()) {
+        for (int row = 0; row < model->rowCount(); ++row) {
+            QString currentBookId = model->data(model->index(row, 0)).toString(); // Колонка book_id предполагается первой
+            if (currentBookId == bookId) {
+                QStringList bookDetails;
+                for (int column = 0; column < model->columnCount(); ++column) {
+                    bookDetails << model->data(model->index(row, column)).toString();
+                }
+                emit bookSelected(bookDetails);
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            QMessageBox::information(this, "Результат поиска", "Книга с ID \"" + bookId + "\" не найдена.");
+        }
+    }
 }
 

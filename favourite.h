@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QDialog>
+#include <QTableWidget>
+#include <QStringList>
 #include <QStandardItemModel>
 
 namespace Ui {
@@ -18,15 +20,18 @@ public:
     ~Favourite();
     void setMainTableModel(QStandardItemModel *model);
 
+public slots:
+    void addBookToTable(const QStringList &bookDetails);
 
 private slots:
     void on_pushButton_clicked();
-
     void on_pushButton54_clicked();
 
 private:
-    Ui::Favourite *ui;
+    void loadCSVData(const QString &filePath);
+    void hideAllRows();
 
+    Ui::Favourite *ui;
 };
 
 #endif // FAVOURITE_H
