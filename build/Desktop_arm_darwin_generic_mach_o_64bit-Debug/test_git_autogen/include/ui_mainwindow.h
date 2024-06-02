@@ -96,6 +96,7 @@ public:
 
         tableView = new QTableView(centralwidget);
         tableView->setObjectName("tableView");
+        tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
 
         verticalLayout->addWidget(tableView);
 
@@ -105,7 +106,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 1172, 37));
+        menubar->setGeometry(QRect(0, 0, 519, 17));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");

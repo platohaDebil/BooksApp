@@ -93,6 +93,7 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/wait.h \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/favourite.h \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/proxymodel.h \
+  /Users/german_hse/Desktop/NBGFTYUI/BooksApp/secwindow.h \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/supplementary.h \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/tablemodel.h \
   /opt/homebrew/Cellar/qt/6.6.2_1/lib/QtCore.framework/Versions/A/Headers/QAbstractTableModel \

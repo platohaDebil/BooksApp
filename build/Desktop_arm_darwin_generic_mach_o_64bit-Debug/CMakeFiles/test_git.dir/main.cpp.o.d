@@ -1109,6 +1109,7 @@ CMakeFiles/test_git.dir/main.cpp.o: \
   /opt/homebrew/include/QtWidgets/qtableview.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
   /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
+  /Users/german_hse/Desktop/NBGFTYUI/BooksApp/secwindow.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QApplication \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qapplication.h \
   /opt/homebrew/include/QtCore/qcoreapplication.h \

@@ -1114,7 +1114,9 @@ CMakeFiles/test_git.dir/test_git_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/include/QtGui/qtextformat.h \
   /opt/homebrew/include/QtGui/qpen.h \
   /opt/homebrew/include/QtGui/qtextoption.h \
+  /Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/EWIEGA46WW/../../../../secwindow.h \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/EWIEGA46WW/moc_proxymodel.cpp \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/EWIEGA46WW/moc_secdialogue.cpp \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/EWIEGA46WW/../../../../secdialogue.h \
+  /Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/EWIEGA46WW/moc_secwindow.cpp \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/EWIEGA46WW/moc_tablemodel.cpp

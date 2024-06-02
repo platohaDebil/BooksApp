@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-3ac530630915596ddeed.json",
+					"jsonFile" : "directory-.-Debug-a52c779b59f31bd4e4b7.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "test_git::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_git-Debug-07e24b30ed77d8d4f53a.json",
+					"jsonFile" : "target-test_git-Debug-af70e5c0e4b9b0f9b8fa.json",
 					"name" : "test_git",
 					"projectIndex" : 0
 				},

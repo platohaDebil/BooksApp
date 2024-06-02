@@ -44,19 +44,23 @@ constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::string
     "",
     "arg1",
     "on_pushButton_clicked",
-    "on_lineEdit_textEdited",
+    "on_tableView_doubleClicked",
+    "QModelIndex",
+    "index",
     "on_favouriteButton_clicked"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[14];
+    uint offsetsAndSizes[18];
     char stringdata0[11];
     char stringdata1[31];
     char stringdata2[1];
     char stringdata3[5];
     char stringdata4[22];
-    char stringdata5[23];
-    char stringdata6[27];
+    char stringdata5[27];
+    char stringdata6[12];
+    char stringdata7[6];
+    char stringdata8[27];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -67,15 +71,19 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(42, 0),  // ""
         QT_MOC_LITERAL(43, 4),  // "arg1"
         QT_MOC_LITERAL(48, 21),  // "on_pushButton_clicked"
-        QT_MOC_LITERAL(70, 22),  // "on_lineEdit_textEdited"
-        QT_MOC_LITERAL(93, 26)   // "on_favouriteButton_clicked"
+        QT_MOC_LITERAL(70, 26),  // "on_tableView_doubleClicked"
+        QT_MOC_LITERAL(97, 11),  // "QModelIndex"
+        QT_MOC_LITERAL(109, 5),  // "index"
+        QT_MOC_LITERAL(115, 26)   // "on_favouriteButton_clicked"
     },
     "MainWindow",
     "on_comboBox_currentTextChanged",
     "",
     "arg1",
     "on_pushButton_clicked",
-    "on_lineEdit_textEdited",
+    "on_tableView_doubleClicked",
+    "QModelIndex",
+    "index",
     "on_favouriteButton_clicked"
 };
 #undef QT_MOC_LITERAL
@@ -99,12 +107,12 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        1,    1,   38,    2, 0x08,    1 /* Private */,
        4,    0,   41,    2, 0x08,    3 /* Private */,
        5,    1,   42,    2, 0x08,    4 /* Private */,
-       6,    0,   45,    2, 0x08,    6 /* Private */,
+       8,    0,   45,    2, 0x08,    6 /* Private */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::QString,    3,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QString,    3,
+    QMetaType::Void, 0x80000000 | 6,    7,
     QMetaType::Void,
 
        0        // eod
@@ -124,9 +132,9 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         // method 'on_pushButton_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_lineEdit_textEdited'
+        // method 'on_tableView_doubleClicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QModelIndex &, std::false_type>,
         // method 'on_favouriteButton_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
@@ -141,7 +149,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->on_comboBox_currentTextChanged((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 1: _t->on_pushButton_clicked(); break;
-        case 2: _t->on_lineEdit_textEdited((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 2: _t->on_tableView_doubleClicked((*reinterpret_cast< std::add_pointer_t<QModelIndex>>(_a[1]))); break;
         case 3: _t->on_favouriteButton_clicked(); break;
         default: ;
         }

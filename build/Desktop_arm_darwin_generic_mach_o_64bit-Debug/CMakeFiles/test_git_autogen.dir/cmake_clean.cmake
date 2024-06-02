@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "test_git_autogen/include/ui_favourite.h"
   "test_git_autogen/include/ui_mainwindow.h"
   "test_git_autogen/include/ui_secdialogue.h"
+  "test_git_autogen/include/ui_secwindow.h"
   "test_git_autogen/mocs_compilation.cpp"
   "test_git_autogen/timestamp"
 )

@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/german_hse/Desktop/NBGFTYUI/BooksApp/mainwindow.cpp" "CMakeFiles/test_git.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/test_git.dir/mainwindow.cpp.o.d"
   "/Users/german_hse/Desktop/NBGFTYUI/BooksApp/proxymodel.cpp" "CMakeFiles/test_git.dir/proxymodel.cpp.o" "gcc" "CMakeFiles/test_git.dir/proxymodel.cpp.o.d"
   "/Users/german_hse/Desktop/NBGFTYUI/BooksApp/secdialogue.cpp" "CMakeFiles/test_git.dir/secdialogue.cpp.o" "gcc" "CMakeFiles/test_git.dir/secdialogue.cpp.o.d"
+  "/Users/german_hse/Desktop/NBGFTYUI/BooksApp/secwindow.cpp" "CMakeFiles/test_git.dir/secwindow.cpp.o" "gcc" "CMakeFiles/test_git.dir/secwindow.cpp.o.d"
   "/Users/german_hse/Desktop/NBGFTYUI/BooksApp/supplementary.cpp" "CMakeFiles/test_git.dir/supplementary.cpp.o" "gcc" "CMakeFiles/test_git.dir/supplementary.cpp.o.d"
   "/Users/german_hse/Desktop/NBGFTYUI/BooksApp/tablemodel.cpp" "CMakeFiles/test_git.dir/tablemodel.cpp.o" "gcc" "CMakeFiles/test_git.dir/tablemodel.cpp.o.d"
   "/Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/mocs_compilation.cpp" "CMakeFiles/test_git.dir/test_git_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/test_git.dir/test_git_autogen/mocs_compilation.cpp.o.d"

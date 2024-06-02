@@ -344,6 +344,30 @@ secdialogue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_git.dir/build.make CMakeFiles/test_git.dir/secdialogue.cpp.s
 .PHONY : secdialogue.cpp.s
 
+secwindow.o: secwindow.cpp.o
+.PHONY : secwindow.o
+
+# target to build an object file
+secwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_git.dir/build.make CMakeFiles/test_git.dir/secwindow.cpp.o
+.PHONY : secwindow.cpp.o
+
+secwindow.i: secwindow.cpp.i
+.PHONY : secwindow.i
+
+# target to preprocess a source file
+secwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_git.dir/build.make CMakeFiles/test_git.dir/secwindow.cpp.i
+.PHONY : secwindow.cpp.i
+
+secwindow.s: secwindow.cpp.s
+.PHONY : secwindow.s
+
+# target to generate assembly for a file
+secwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_git.dir/build.make CMakeFiles/test_git.dir/secwindow.cpp.s
+.PHONY : secwindow.cpp.s
+
 supplementary.o: supplementary.cpp.o
 .PHONY : supplementary.o
 
@@ -449,6 +473,9 @@ help:
 	@echo "... secdialogue.o"
 	@echo "... secdialogue.i"
 	@echo "... secdialogue.s"
+	@echo "... secwindow.o"
+	@echo "... secwindow.i"
+	@echo "... secwindow.s"
 	@echo "... supplementary.o"
 	@echo "... supplementary.i"
 	@echo "... supplementary.s"

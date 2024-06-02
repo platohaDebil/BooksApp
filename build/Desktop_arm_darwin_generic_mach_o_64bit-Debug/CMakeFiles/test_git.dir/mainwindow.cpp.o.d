@@ -1109,6 +1109,7 @@ CMakeFiles/test_git.dir/mainwindow.cpp.o: \
   /opt/homebrew/include/QtWidgets/qtableview.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QStringList \
   /opt/homebrew/lib/QtCore.framework/Headers/qstringlist.h \
+  /Users/german_hse/Desktop/NBGFTYUI/BooksApp/secwindow.h \
   /Users/german_hse/Desktop/NBGFTYUI/BooksApp/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/test_git_autogen/include/./ui_mainwindow.h \
   /opt/homebrew/include/QtCore/QVariant \
   /opt/homebrew/lib/QtCore.framework/Headers/qvariant.h \
