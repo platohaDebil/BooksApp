@@ -40,13 +40,26 @@
    <property name="geometry">
     <rect>
      <x>150</x>
-     <y>10</y>
+     <y>110</y>
      <width>211</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
     <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>90</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Enter Book ID</string>
    </property>
   </widget>
  </widget>
